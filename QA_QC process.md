@@ -1,12 +1,7 @@
 
 <a align="left" href="https://github.com/nmfs-openscapes/2024-nmfs-champions"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="35px"/></a>
 
-# Annual QA_QC procedures overview 
-
-Each year we conduct QA/QC procedures on a year's data in edealer in an attempt to make sure the reports are as complete and accurate as possible.
-
-
-## Overall Steps in the Process
+## Overall Steps in the QA/QC Process
 
 **1) Gather previous year's vessel permit data**
 - **Permits** Pull permits for Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
