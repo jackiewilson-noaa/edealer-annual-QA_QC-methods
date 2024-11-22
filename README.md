@@ -1,33 +1,23 @@
 
 <a align="left" href="https://github.com/nmfs-openscapes/2024-nmfs-champions"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="35px"/></a>
 
-# 2024 NMFS Champions 
+# Annual QA_QC procedures overview 
 
-Welcome to the 2024 NMFS Openscapes Champions Program for NOAA’s National
-Marine Fisheries Service (NMFS). This is the website for the three NOAA Fisheries
-Cohorts running concurrently in Fall 2024 with research teams and
-individuals from across NMFS Centers and Offices.
+Each year we conduct QA/QC procedures on a year's data in edealer in an attempt to make sure the reports are as complete and accurate as possible.
 
-<img src="horst-champions-trailhead.png" align="right" width="450">
 
-## Cohort Agendas
+## Overall Steps in the Process
 
-Cohorts A, B, C will meet via Zoom five times over two months for 1.5
-hours each. Agendas are accessible to Cohort participants in our Cohort Google
-Drive Folders; they are an archive of our live google-doc'ing. Please see
-<https://openscapes.org/series> to view blank versions of the agendas.
+**Gather previous year's vessel permit data**
+- **permits** Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
+- **Formatting** Format the different permit lists so that they can be combined into one file with issuance and expiration data 
 
-**Cohort A**
-- **Dates:** October 8, 22, November 5, 19, December 3
-- **Times:** 11:00 am - 12:30 pm PT
-- [CohortFolder](https://drive.google.com/drive/folders/17WmbJgxIHnrs8YQe5y90QhfvICZOiJRl)
 
-**Cohort B**
-- **Dates:** October 9, 23, November 6, 20, December 4
-- **Times:** 10:00 - 11:30 am PT
-- [CohortFolder](https://drive.google.com/drive/folders/1PTqeyrRC6QvZZ1dZ85pmdiE4JxLJktkX)
+**Pull dealer reports that do not have VTRs and do not only contain smooth dogfish**
+- **missing VTRs** search for reports with no value in the "Trip ID" field in the final view or for records with only "R" in the "Trip ID" field
 
-**Cohort C**
+
+**Merging vessel permit data to dealer reports missing VTRs**
 - **Dates:** October 9, 23, November 6, 20, December 4
 - **Times:** 1:00 - 2:30 pm PT
 - [CohortFolder](https://drive.google.com/drive/folders/1vnoIvwQJ0_qxaJaa7ejS4FWs90oZF9Aq)
