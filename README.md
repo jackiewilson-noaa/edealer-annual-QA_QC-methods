@@ -23,7 +23,7 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Identifying errors** Create an "Error" data field that indicates a VTR is need for the report. Sort all the reports and remove all the reoprts with no errors
 - **Adding Contact Information** Merge information from above with the the Active List of Dealers that includes: Participant_ID, Acct Manager, State, Phone, Emails (concatnated together if more than one), County, and Permit Block Date; if contact information is missing, look for informatino on the Expired List of Dealers.
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
-- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Email sent?" and "Comments" at the beginning of the spreadsheet.
+- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments" and "Email sent?" at the beginning of the spreadsheet.
 
 **4) Identifying Incomplete Records**
 - **Look for prohibited species** These reports are identified and dealt with right away
@@ -36,66 +36,24 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Identify all STUCK records and associated errors** Identify why the record is stuck based on the error messages either at the trip or landing level. Add to "Error" field the reason for why the reocrd is stuck; Remove any records that administrator must adress and dealer cannot fix; put those in a separate tab. Remove all the reoprts with no errors and put on a separate tab.
 - **Create a Unique ID** Concatenate the fields: SAFIS DEALER_ID, SAFIS_DEALER_RPT_ID, DEALER_TICKET_NO, EDEALER_RPT_NUM, LANDING_SEQ; these will be the “UNIQUE ID” for a given record
 - **Adding Contact Information** Merge information from above with the the Active List of Dealers that includes: Participant_ID, Acct Manager, State, Phone, Emails (concatnated together if more than one), County, and Permit Block Date; if contact information is missing, look for informatino on the Expired List of Dealers.
+- **Formatting** Format the spreadsheet according to: [https://docs.google.com/spreadsheets/d/1ACGUpddFpjv8vzAyRGzBsi4UUSuYxqLtwgkbQ4-1wqs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1ACGUpddFpjv8vzAyRGzBsi4UUSuYxqLtwgkbQ4-1wqs/edit?usp=sharing)
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. This template will include langauge on permit holds. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
-- - **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Email sent?" and "Comments" at the beginning of the spreadsheet.
+- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
 
 **5) Check for Missing Reports**
-- **Identifying missing reports** Run the compliance monitor for the years in question for all active dealers
-- **
+- **Identifying missing reports** Run the compliance monitor for the years in question for all active dealers. Export "All details". Sort the spreadsheet by "Report Type" and then search for "Not Submitted". Remove all records except for ones with "Not Submitted".
+- **Missing Weeks Field** Create a new field called "Missing Weeks" and concatenate the "Reporting_From" and "Reporting_To" data fields into the "Missing Weeks" field. Have the format be like "08/18/2024 to 08/24/2024"
 - **Adding Contact Information** Merge information from above with the the Active List of Dealers that includes: Participant_ID, Acct Manager, State, Phone, Emails (concatnated together if more than one), County, and Permit Block Date; if contact information is missing, look for informatino on the Expired List of Dealers.
+- **Formatting** Format the spreadsheet according to: [https://docs.google.com/spreadsheets/d/1ACGUpddFpjv8vzAyRGzBsi4UUSuYxqLtwgkbQ4-1wqs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/13XxOSzYy9oigxHKTNjaw4HE5Z0BvSxiK075KLhZD2kY/edit?usp=sharing)
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. This template will include langauge on permit holds. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
+- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
   
 ## Applying Permit holds
 
-Coworking sessions are where get our own work done at the same time
-together. Sometimes, this means quiet work with check-ins to break up
-focused work and get feedback, and sometimes this involves asking
-questions and screensharing to learn and problem solve. We will make
-breakout rooms in Zoom so people working on related themes can meet and
-learn from each other.
+**1) GARFO Permit Holds**
+- **Identify all GARFO permit holders** In each of the spreadsheets created under steps 4 & 5 above, identify the dealers who hold a GARFO permit. Indicate in a new "Issue" data field if the hold is for "Incomplete Reports" or "Missing Reports". Keep the Participant_ID, Dealer Name, GARFO_DNUM, Acct Mgr
+- **Create a new list** For the isssuance year in question, format the list of dealers with incomplete and missing reports and add them to the google sheet for the team to track: [https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing)
+- **Update GARFO_PERMIT_BLOCKS table** Have maintenance contractor add the dealers who would have a GARFO permit hold for a given year. Send them the necessary data for the following fields:
+  Year, GARFO_NO, DEALER_NAME, CREATED_DATE, EXPIRATION_DATE, CREATED_BY, REMOVED_BY, IS_ACTIVE. Set all the IS_ACTIVE=Y.
+  
 
-Participants across all three Fall 2024 NMFS Openscapes Champions
-Cohorts are welcome and encouraged to join a Coworking session in the
-weeks between Cohort Calls.
-
-**Coworking Date-Times:**   
-Tuesdays and Thursdays 12:00 -1:00 pm PT every second
-week: Oct 15, 17, 29\*, 31, Nov 12, 14, 26, 28.   
-\*Tuesday Oct 29 will be 11:00 - 12:00 PT.
-
-## Participating teams and individuals
-
-Some brief information about participants. Please add any edits directly
-(we’ll learn how in our GitHub Clinic!)
-
-1. **PIFSC Socioeconomics**: My name is Crystal Dombrow and I analyze socioeconomic cost-earnings survey data from small boat fisheries in the Pacific Islands region.
-2. **Alaska HCD**: Our team works on EFH in AK. We are interested in learning best practices for data workflow and report writing. You can see more here: [Alaska Essential Fish Habitat](https://www.fisheries.noaa.gov/alaska/habitat-conservation/essential-fish-habitat-efh-alaska). Names: Skylar Bayer, Mallarie Yeager, Molly Zaleski, Mason Smith.
-
-## Our Team
-
-Julie Lowndes (@jules32), Openscapes   
-Stefanie Butland (@stefaniebutland), Openscapes  
-Eli Holmes (@eeholmes), NMFS Open Science  
-Jon Peake (@jonpeake), NMFS Open Science   
-NMFS Openscapes Mentors
-
-## More about Openscapes and the Champions program:
-
-- [**NMFS Openscapes Champions
-  Cohorts**](https://nmfs-openscapes.github.io/champions.html)
-- [**Our path to better science in less time using open data science
-  tools**](https://www.nature.com/articles/s41559-017-0160) (Lowndes et
-  al. 2017) - This describes a marine science team’s transition to open
-  collaborative teamwork. It was the original inspiration for creating
-  the Champions Program and heavily influences the Core Lessons. We’ll
-  ask that everyone participating reads it before our first Cohort Call.
-- [**Supercharge your research: a ten-week plan for open data science**](https://openscapes.github.io/supercharge-research/) (Lowndes et
-  al. 2019) - This was co-authored with the inaugural Champions Cohort,
-  capturing the most valuable take-aways for marine and environmental
-  science early career faculty.
-- [**Shifting institutional culture to develop climate solutions with
-  Open Science**](https://onlinelibrary.wiley.com/doi/10.1002/ece3.11341) (Lowndes
-  et al. 2019) - This was co-authored by Openscapes mentors across
-  organizations – including NASA Earthdata, NOAA Fisheries, EPA,
-  California Water Boards, Pathways to Open Science, Fred Hutch Cancer
-  Center.
