@@ -1,12 +1,12 @@
 
 <a align="left" href="https://github.com/nmfs-openscapes/2024-nmfs-champions"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="35px"/></a>
 
-# Annual QA_QC procedures overview 
+# Annual QA_QC procedures & GARFO permit hold overview 
 
-Each year we conduct QA/QC procedures on a year's data in edealer in an attempt to make sure the reports are as complete and accurate as possible.
+Each year we conduct QA/QC procedures on a year's data in edealer in an attempt to make sure the reports are as complete and accurate as possible. We use any issues identified during this process as the basis for applying holds on the renewal of dealers' permits. Those holds can be released and the permit renewed once the appropriate dealer reports have been updated or missing dealer reports have been submitted. Below is an overview of the main steps. The more detailed explanation can be found in the "QA_QC process.md" file.
 
 
-## Overall Steps in the Process
+## Overall Steps in the QA/QC Process
 
 **1) Gather previous year's vessel permit data**
 - **Permits** Pull permits for Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
@@ -48,9 +48,8 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. This template will include langauge on permit holds. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
 - **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
   
-## Applying Permit holds
+## Applying GARFO Permit holds
 
-**1) GARFO Permit Holds**
 - **Identify all GARFO permit holders** In each of the spreadsheets created under steps 4 & 5 above, identify the dealers who hold a GARFO permit. Indicate in a new "Issue" data field if the hold is for "Incomplete Reports" or "Missing Reports". Keep the Participant_ID, Dealer Name, GARFO_DNUM, Acct Mgr
 - **Create a new list** For the isssuance year in question, merge the list of dealers with incomplete reoprts and missing reports into one spreadsheet. Format the list of dealers with incomplete and missing reports and add them to the google sheet for the team to track: [https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing)
 - **Update GARFO_PERMIT_BLOCKS table** Have maintenance contractor add the dealers who would have a GARFO permit hold for a given year. Send them the necessary data for the following fields:
