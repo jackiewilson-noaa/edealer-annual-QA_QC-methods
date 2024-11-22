@@ -38,7 +38,8 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Adding Contact Information** Merge information from above with the the Active List of Dealers that includes: Participant_ID, Acct Manager, State, Phone, Emails (concatnated together if more than one), County, and Permit Block Date; if contact information is missing, look for informatino on the Expired List of Dealers.
 - **Formatting** Format the spreadsheet according to: [https://docs.google.com/spreadsheets/d/1dD4lqZqdM_dQrF6YrJa4JaxZQfyh1e4WekMY07vRfIc/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1dD4lqZqdM_dQrF6YrJa4JaxZQfyh1e4WekMY07vRfIc/edit?usp=sharing)
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. This template will include langauge on permit holds. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
-- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
+- **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Resolved," "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
+- **Sending emails** After Rob has created the Word docs for each dealer and saved them on a shared drive, open each Word doc, copy and paste into an email, and send to the dealer. On the google doc tracking incomplete reports, indicate that the email was sent to the dealer. I would suggest creating a "sent" folder on the shared drive as well and move the Word doc for that dealer to the "sent" folder after the email has been sent to the dealer.
 
 **5) Check for Missing Reports**
 - **Identifying missing reports** Run the compliance monitor for the years in question for all active dealers. Export "All details". Sort the spreadsheet by "Report Type" and then search for "Not Submitted". Remove all records except for ones with "Not Submitted".
@@ -47,6 +48,7 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Formatting** Format the spreadsheet according to: [https://docs.google.com/spreadsheets/d/1ACGUpddFpjv8vzAyRGzBsi4UUSuYxqLtwgkbQ4-1wqs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/13XxOSzYy9oigxHKTNjaw4HE5Z0BvSxiK075KLhZD2kY/edit?usp=sharing)
 - **Creating word docs for emails** Send Rob the template language to create Word docs for each dealer in the spreadsheet. This template will include langauge on permit holds. Have Rob run his Python code to create word docs that will be used as the basis for the emails to be sent to dealers
 - **Google spreadsheet** Upload a google spreadsheet so that the team can track the reports. Add a columns called "Comments", "Permit Hold" (have them all = Y), and "Email sent?" at the beginning of the spreadsheet.
+- **Sending emails** After Rob has created the Word docs for each dealer and saved them on a shared drive, open each Word doc, copy and paste into an email, and send to the dealer. On the google doc tracking missing reports, indicate that the email was sent to the dealer. I would suggest creating a "sent" folder on the shared drive as well and move the Word doc for that dealer to the "sent" folder after the email has been sent to the dealer.
   
 ## Applying Permit holds
 
