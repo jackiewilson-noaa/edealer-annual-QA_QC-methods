@@ -50,6 +50,7 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
   
 ## Applying GARFO Permit holds
 
+If dealers have incomplete or missing reports, we communicate with the GARFO permit office that we would like to have a the renewal of that dealer's GARFO permit held up until the issues associated that dealer's reports have been addressed. The steps for applying these "permit holds" is outlined in the "QA_QC process.md" file.
 - **Identify all GARFO permit holders** In each of the spreadsheets created under steps 4 & 5 above, identify the dealers who hold a GARFO permit. Indicate in a new "Issue" data field if the hold is for "Incomplete Reports" or "Missing Reports". Keep the Participant_ID, Dealer Name, GARFO_DNUM, Acct Mgr
 - **Create a new list** For the isssuance year in question, merge the list of dealers with incomplete reoprts and missing reports into one spreadsheet. Format the list of dealers with incomplete and missing reports and add them to the google sheet for the team to track: [https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?usp=sharing)
 - **Update GARFO_PERMIT_BLOCKS table** Have maintenance contractor add the dealers who would have a GARFO permit hold for a given year. Send them the necessary data for the following fields:
