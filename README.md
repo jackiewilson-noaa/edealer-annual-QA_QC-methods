@@ -27,9 +27,9 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 - **Look for blacknose sharks landed in the GOM region** These reports are identified and dealt with right away
 - **Look for shortfin mako sharks** These reports are identified and dealt with right away
 - **Identify all STUCK records and associated errors** Create an "Error" data field that indicates the error assoicated with the record
--- **Look for missing price information** Pull data from the final view and identify records with price per pound $0.10 or less and do no have certain disposition codes
--- **Look for Reporting Quantities=0**14)	Sort data from the final view and identify records with REPORTED_QUANTITY = 0
--- **Identify all STUCK records and associated errors** Create an "Error" data field that indicates the error assoicated with the record
+- **Look for missing price information** Pull data from the final view and identify records with price per pound $0.10 or less and do no have certain disposition codes
+- **Look for Reporting Quantities=0**14)	Sort data from the final view and identify records with REPORTED_QUANTITY = 0
+- **Identify all STUCK records and associated errors** Create an "Error" data field that indicates the error assoicated with the record
 - 
 - 
 
