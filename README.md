@@ -9,27 +9,30 @@ Each year we conduct QA/QC procedures on a year's data in edealer in an attempt 
 ## Overall Steps in the Process
 
 **Gather previous year's vessel permit data**
-- **permits** Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
-- **Formatting** Format the different permit lists so that they can be combined into one file with issuance and expiration data 
+- **Permits** Pull permits for Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
+- **Formatting** Format the different permit lists so that they can be combined into one file with issuance and expiration dates. indicate which permits require VTRs submission 
 
 
 **Pull dealer reports that do not have VTRs and do not only contain smooth dogfish**
-- **missing VTRs** search for reports with no value in the "Trip ID" field in the final view or for records with only "R" in the "Trip ID" field
+- **Missing VTRs** search for reports with no value in the "Trip ID" field in the final view or for records with only "R" in the "Trip ID" field
 
 
 **Merging vessel permit data to dealer reports missing VTRs**
-- **Dates:** October 9, 23, November 6, 20, December 4
-- **Times:** 1:00 - 2:30 pm PT
-- [CohortFolder](https://drive.google.com/drive/folders/1vnoIvwQJ0_qxaJaa7ejS4FWs90oZF9Aq)
+- **Merging files** Merge the file with the vessel permits to the dealer reports with missing VTRs by the supplier_vessel_ID value; Concatenate the fields: SAFIS DEALER_ID, SAFIS_DEALER_RPT_ID, DEALER_TICKET_NO, EDEALER_RPT_NUM, LANDING_SEQ; these will be the “UNIQUE ID” for a given record
+- **Reviewing records** Review dealer reports that have a vessel on them with permits that require VTR submission by are missing VTRs
+- **Identifying errors** Create an "Error" data field that indicates a VTR is need for the report
 
+**Identifying Incomplete Records**
+- **Look for prohibited species** These reports are identified and dealt with right away
+- **Look for blacknose sharks landed in the GOM region** These reports are identified and dealt with right away
+- **Look for shortfin mako sharks** These reports are identified and dealt with right away
+- **Identify all STUCK records and associated errors** Create an "Error" data field that indicates the error assoicated with the record
+-- **Look for missing price information** Pull data from the final view and identify records with price per pound $0.10 or less and do no have certain disposition codes
+-- **Look for Reporting Quantities=0**14)	Sort data from the final view and identify records with REPORTED_QUANTITY = 0
+-- **Identify all STUCK records and associated errors** Create an "Error" data field that indicates the error assoicated with the record
+- 
+- 
 
-| Cohort Calls | Topics                                   | Series Chapters |      Seaside Chat Topics |
-|:-------------|:-----------------------------------------------------|:----------------------|:--------------------------------|
-| Call 1 | Openscapes mindset                             | [mindset](https://openscapes.github.io/series/mindset), [better science for future us - Alaska Marine Mammal Stock Assessment Report process - a SAR Story](https://docs.google.com/presentation/d/1blfD0KpceoPNvDUt-5n79k49jiPSC2_l5SRyRkab6VE/)  ([recording](https://www.youtube.com/watch?v=wqbwcCXbFL8))  | Pathway trailhead; create GitHub accounts 
-| Call 2 | GitHub for publishing & project management     | [publishing](https://openscapes.github.io/series/github-pub), [project management](https://openscapes.github.io/series/github-issues) | Shared organizing with GitHub
-| Call 3 | Team culture and data strategies for future us | [team culture](https://openscapes.github.io/series/team-culture), [data strategies - California Current Ecosystem Status Report Automation](https://docs.google.com/presentation/d/1Qb1BM35Y7QxwCTb1HDds4FtItbq1Hg9JmGdVU_NeDrc/edit#slide=id.p) [(recording)](https://youtu.be/St_j0D-u7UU)| Onboarding documentation 
-| Call 4 | Open communities & intro to Cloud workflows    | [open communities](https://openscapes.github.io/series/communities), [coding strategies](https://openscapes.github.io/series/coding-strategies) & intro to Cloud workflows | Pathways preparation
-| Call 5 | Pathways share & next steps                     | [pathways](https://openscapes.github.io/series/core-lessons/pathways.html) |   | 
 
 ## Coworking times (optional)
 
