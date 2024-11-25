@@ -8,9 +8,9 @@ Each year we must work with the GARFO permit office to ensure dealers submit mis
 
 ## Overall Steps in the Process
 
-**1) Gather previous year's vessel permit data**
-- **Permits** Pull permits for Southeast Limited access and open access vessel permits, HMS open access permits, GARFO incidential squid trawl permits
-- **Formatting** Format the different permit lists so that they can be combined into one file with issuance and expiration dates. indicate which permits require VTRs submission 
+**1) Emails from Don Paskowski at GARFO**
+- **new applications** If Don P. at GARFO receives an application from a dealer that we have requested an HMS Compliance hold on, he will send an email to the team to let us know that we need to follow up with the dealer to see if the issues are resolved
+- **Updating GARFO permit hold list** The POC (who can be Jackie unless out of the office, in which case a POC will be identified) will see who is the account manager for the dealer who has submitted an application. The POC will check the google sheet [https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?gid=680352385#gid=680352385](https://docs.google.com/spreadsheets/d/1j3tHnC15TjdkqyJfNE7ACX6vx4uoKeccjuscuBjLyuQ/edit?gid=680352385#gid=680352385) and indicate that we have “application in hand” in the “Comments” column 
 
 
 **2) Pull dealer reports that do not have VTRs and do not only contain smooth dogfish**
